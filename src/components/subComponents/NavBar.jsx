@@ -19,17 +19,17 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="flex justify-between items-center bg-gradient-to-r from-[#191919] to-lime-500 z-40 relative lg:w-3/4 mx-auto rounded-2xl mt-4">
+    <div className="flex justify-between items-center bg-gradient-to-r from-[#191919cc] to-lime-400/30 z-40 relative lg:w-3/4 mx-auto rounded-2xl mt-4">
       <div className="">
-        <h3 className="text-3xl font-semibold ml-6 py-2">AR</h3>
+        <h3 className="text-3xl font-semibold ml-6 py-2 font-primaryFont">AR</h3>
       </div>
       <div className="flex">
-        <div className="flex list-none gap-x-10 text-white">
+        <div className="flex list-none gap-x-10 text-white font-primaryFont">
           {link}
         </div>
       </div>
       <div>
-        <button className="bg-slate-800 py-4 px-8 rounded-r-xl">Hire Me +</button>
+        <button className="bg-primaryColor font-primaryFont font-semibold text-gray-800 py-4 px-8 rounded-r-xl">Hire Me +</button>
       </div>
     </div>
   );
