@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import NavBar from '../subComponents/NavBar';
+import Footer from '../pages/Footer';
 
 const MainLayout = () => {
     return (
@@ -11,6 +12,9 @@ const MainLayout = () => {
         <main>
             <Outlet/>
         </main>
+        <footer className='mt-[80px]'>
+            <Footer/>
+        </footer> 
         </>
     );
 };

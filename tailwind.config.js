@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'primaryFont': ["Poppins", "sans-serif"],
+        'secondaryFont': ["Courgette", "cursive"],
       },
       colors: {
         'primaryColor': '#D8FE1E',

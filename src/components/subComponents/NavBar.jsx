@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <div className="flex justify-between items-center bg-gradient-to-r from-[#191919cc] to-lime-400/30 z-40 relative lg:w-3/4 mx-auto rounded-2xl mt-4">
       <div className="">
-        <h3 className="text-3xl font-semibold ml-6 py-2 font-primaryFont">AR</h3>
+        <h3 className="text-3xl font-semibold ml-6 py-2 font-secondaryFont">AR</h3>
       </div>
       <div className="flex">
         <div className="flex list-none gap-x-10 text-white font-primaryFont">
