@@ -4,17 +4,29 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   const link = (
     <>
-      <li>
+      <li className="relative group">
         <NavLink to="/">Home</NavLink>
+         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
       </li>
-      <li>
-        <NavLink to="about">About Me</NavLink>
+      <li className="relative group">
+        <NavLink to="projects">Projects</NavLink>
+         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
       </li>
-      <li>
+      <li className="relative group">
+        <NavLink to="blog">Blog</NavLink>
+         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+      </li>
+      <li className="relative group">
+        <NavLink to="page">Page</NavLink>
+         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+      </li>
+      <li className="relative group">
+        <NavLink to="about">About Us</NavLink>
+         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+      </li>
+      <li className="relative group">
         <NavLink to="contact">Contact Us</NavLink>
-      </li>
-      <li>
-        <NavLink to="project">Project</NavLink>
+         <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
       </li>
     </>
   );
@@ -24,7 +36,7 @@ const NavBar = () => {
         <h3 className="text-3xl font-semibold ml-6 py-2 font-secondaryFont">AR</h3>
       </div>
       <div className="flex">
-        <div className="flex list-none gap-x-10 text-white font-primaryFont">
+        <div className="flex list-none gap-x-10 text-white font-light font-primaryFont">
           {link}
         </div>
       </div>

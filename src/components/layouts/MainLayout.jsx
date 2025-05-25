@@ -6,7 +6,7 @@ import Footer from '../pages/Footer';
 const MainLayout = () => {
     return (
         <>
-        <nav>
+        <nav className='fixed w-full z-50 top-0 left-0'>
             <NavBar/>
         </nav>
         <main>
