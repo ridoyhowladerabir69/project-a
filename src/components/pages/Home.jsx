@@ -8,6 +8,8 @@ import AboutImg from "../../assets/customer.png";
 import { TbHours24 } from "react-icons/tb";
 import { TfiLayoutLineSolid } from "react-icons/tfi";
 import { motion } from "framer-motion";
+import SkillElement from "../../assets/skill-element.png";
+import Element3 from "../../assets/element3.png";
 
 const Home = () => {
   const skills = [
@@ -128,7 +130,7 @@ const Home = () => {
         </section>
 
         {/* About section */}
-        <section className="w-3/4 mx-auto mt-[80px] font-primaryFont">
+        <section className="w-3/4 mx-auto mt-[80px] font-primaryFont relative">
           <div className="flex items-center justify-between">
             <div className="">
               <p className="text-lg text-primaryColor border-b-2 w-1/6 border-primaryColor mb-5 text-nowrap">
@@ -185,10 +187,15 @@ const Home = () => {
               <img
                 className="w-[480px] h-[360px] rounded-xl"
                 src={AboutImg}
-                alt=""
+                alt="about image"
               />
             </div>
           </div>
+          <img
+            className="absolute top-[440px] -right-[160px] w-[280px]"
+            src={Element3}
+            alt="element"
+          />
         </section>
 
         {/* Education And skill section */}
@@ -223,7 +230,7 @@ const Home = () => {
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatu
                 </p>
-                <span class="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
               </div>
               <div className="mt-6 relative group cursor-pointer">
                 <p className="font-semibold text-primaryColor">2010-2013</p>
@@ -233,7 +240,7 @@ const Home = () => {
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatu
                 </p>
-                <span class="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
               </div>
               <div className="mt-6 relative group cursor-pointer">
                 <p className="font-semibold text-primaryColor">2014-2016</p>
@@ -243,7 +250,7 @@ const Home = () => {
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatu
                 </p>
-                <span class="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
               </div>
             </div>
 
@@ -261,7 +268,7 @@ const Home = () => {
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatu
                 </p>
-                <span class="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
               </div>
               <div className="mt-6 relative group cursor-pointer">
                 <p className="font-semibold text-primaryColor">2020-2022</p>
@@ -271,7 +278,7 @@ const Home = () => {
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatu
                 </p>
-                <span class="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
               </div>
               <div className="mt-6 relative group cursor-pointer">
                 <p className="font-semibold text-primaryColor">2023-2024</p>
@@ -281,7 +288,7 @@ const Home = () => {
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatu
                 </p>
-                <span class="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-primaryColor transition-all duration-300 group-hover:w-full"></span>
               </div>
             </div>
           </div>
@@ -290,20 +297,27 @@ const Home = () => {
         {/* My Best Skill section */}
         <section className="bg-[#191919] mt-[80px] py-12">
           <section className="w-3/4 mx-auto font-primaryFont">
-            <p className="text-lg text-primaryColor flex items-center">
-              My Best Skill{" "}
-              <TfiLayoutLineSolid className="text-4xl text-primaryColor ml-2" />
-            </p>
-            <h2 className="text-4xl font-semibold leading-relaxed">
-              Growing professionally
-              <br />
-              exceeding expected
-            </h2>
-            <p className="text-base text-gray-300 mt-3">
-              Financial planners help to gain knowledge aboutw toio invest and{" "}
-              <br />
-              save their money in the most efficient way ever.
-            </p>
+            <div className="relative">
+              <p className="text-lg text-primaryColor flex items-center">
+                My Best Skill{" "}
+                <TfiLayoutLineSolid className="text-4xl text-primaryColor ml-2" />
+              </p>
+              <h2 className="text-4xl font-semibold leading-relaxed">
+                Growing professionally
+                <br />
+                exceeding expected
+              </h2>
+              <p className="text-base text-gray-300 mt-3">
+                Financial planners help to gain knowledge aboutw toio invest and{" "}
+                <br />
+                save their money in the most efficient way ever.
+              </p>
+              <img
+                className="absolute top-0 right-0 w-[280px] h-auto"
+                src={SkillElement}
+                alt=""
+              />
+            </div>
             {/* skill gain */}
             <div>
               <div className="mt-8 space-y-6">
@@ -327,6 +341,22 @@ const Home = () => {
               </div>
             </div>
           </section>
+        </section>
+
+        {/* My Portfolio section */}
+        <section className="w-3/4 mx-auto mt-[80px] font-primaryFont">
+          <div className="flex items-end justify-between">
+            <div>
+              <p className="text-lg text-primaryColor border-b-2 border-primaryColor w-[130px] text-nowrap">MY PORTFOLIO</p>
+              <h2 className="text-4xl font-semibold leading-relaxed">Resonating Professionalism
+                <br />
+                and Accomplishment
+              </h2>
+            </div>
+            <div>
+              <button className="border-2 border-primaryColor text-base py-2 px-4 rounded-lg hover:bg-primaryColor hover:transition-all hover:duration-1000 hover:text-gray-800">View more...</button>
+            </div>
+          </div>
         </section>
       </main>
     </>
