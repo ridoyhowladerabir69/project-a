@@ -10,6 +10,10 @@ import { TfiLayoutLineSolid } from "react-icons/tfi";
 import { motion } from "framer-motion";
 import SkillElement from "../../assets/skill-element.png";
 import Element3 from "../../assets/element3.png";
+import CartImg1 from "../../assets/project-1.png";
+import CartImg2 from "../../assets/project-2.png";
+import CartImg3 from "../../assets/project-3.png";
+import CartImg4 from "../../assets/project-4.png";
 
 const Home = () => {
   const skills = [
@@ -33,29 +37,29 @@ const Home = () => {
 
   return (
     <>
-      <header className="bg-[#191919] w-full h-[640px] -mt-20 overflow-hidden">
-        <div className="w-3/4 h-[100%] mt-20 mx-auto flex items-center justify-between">
-          <div className="max-w-[50%]">
+      <header className="bg-[#191919] w-full h-[560px] md:min-h-[640px] overflow-hidden px-4 md:px-0">
+        <div className="w-full md:w-3/4 h-[100%] mt-32 md:mt-20 mx-auto flex flex-col md:flex-row items-center justify-between">
+          <div className="w-full md:max-w-[50%] text-center md:text-left">
             <p className="text-xl mb-2">
               Hello I'<span className="text-primaryColor">am</span>
             </p>
-            <h1 className="text-6xl font-semibold">
+            <h1 className="text-4xl md:text-6xl font-semibold">
               Ridoy Howlader{" "}
               <span className="text-primaryColor font-secondaryFont font-light">
                 Abir
               </span>
             </h1>
             <img
-              className="w-[280px] h-auto absolute top-[180px] left-[555px]"
+              className="w-[280px] invisible md:visible h-auto absolute top-[180px] left-[555px]"
               src={nameElement}
               alt=""
             />
-            <h3 className="text-2xl mt-8 mb-3">Web Designer</h3>
-            <p className="text-base w-10/12 text-gray-300">
+            <h3 className="text-2xl mt-4 md:mt-8 mb-2 md:mb-3">Web Designer</h3>
+            <p className="text-base md:w-10/12 text-gray-300">
               Financial planners help to gain knowledge about to invest and save
               their money in the most efficient
             </p>
-            <div className="mt-4 mb-4">
+            <div className="mt-3 md:mt-4 mb-4">
               <p className="mb-2 flex items-center">
                 <IoCheckmarkCircleOutline className="text-primaryColor mr-2" />{" "}
                 Achieve Excellence Academy
@@ -67,12 +71,12 @@ const Home = () => {
             </div>
             {/* Banner Element */}
             <img
-              className="absolute top-[240px] right-[580px] w-[480px]"
+              className="absolute top-[190px] md:top-[240px] -right-[90px] md:right-[580px] w-[280px] md:w-[480px]"
               src={Element}
               alt=""
             />
             <img
-              className="absolute top-[400px] right-[540px] w-[300px]"
+              className="absolute invisible md:visible top-[400px] right-[540px] w-[300px]"
               src={Element}
               alt=""
             />
@@ -92,9 +96,9 @@ const Home = () => {
             </div>
           </div>
           {/* Hero Image */}
-          <div className="w-[50%]">
+          <div className="w-full md:w-[50%] mt-8 md:mt-0">
             <img
-              className="max-w-[880px] h-auto object-contain"
+              className="max-w-[880px] h-auto object-contain invisible md:visible"
               src={BannerImg}
               alt=""
             />
@@ -103,25 +107,25 @@ const Home = () => {
       </header>
 
       {/* Main section Start */}
-      <main className="mt-[80px]">
+      <main className="mt-10 md:mt-[80px]">
         {/* Achievements Counter Section */}
-        <section className="w-3/4 mx-auto">
-          <div className="bg-[#191919] border border-primaryColor rounded-xl md:flex items-center md:justify-around py-8">
+        <section className="w-full md:w-3/4 mx-auto px-4 md:px-0">
+          <div className="bg-[#191919] text-center md:text-left border border-primaryColor rounded-xl grid grid-cols-1 md:flex items-center md:justify-around py-8 gap-8 md:gap-0">
             <div className="font-primaryFont">
-              <p className="text-3xl font-semibold mb-2">200 +</p>
+              <p className="text-2xl md:text-3xl font-semibold mb-2">200 +</p>
               <p>Team member</p>
             </div>
-            <div className="border h-[80px] border-primaryColor"></div>
+            <div className="border w-[140px] mx-auto md:mx-0 md:w-0 md:h-[80px] border-primaryColor"></div>
             <div className="font-primaryFont">
               <p className="text-3xl font-semibold mb-2">20 +</p>
               <p>Winning award</p>
             </div>
-            <div className="border h-[80px] border-primaryColor"></div>
+            <div className="border w-[140px] mx-auto md:mx-0 md:w-0 md:h-[80px] border-primaryColor"></div>
             <div className="font-primaryFont">
               <p className="text-3xl font-semibold mb-2">5K +</p>
               <p>Complete project</p>
             </div>
-            <div className="border h-[80px] border-primaryColor"></div>
+            <div className="border w-[140px] mx-auto md:mx-0 md:w-0 md:h-[80px] border-primaryColor"></div>
             <div className="font-primaryFont">
               <p className="text-3xl font-semibold">600 +</p>
               <p>Client review</p>
@@ -130,23 +134,23 @@ const Home = () => {
         </section>
 
         {/* About section */}
-        <section className="w-3/4 mx-auto mt-[80px] font-primaryFont relative">
-          <div className="flex items-center justify-between">
+        <section className="w-full md:w-3/4 mx-auto mt-10 md:mt-[80px]  font-primaryFont relative px-4 md:px-0">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0">
             <div className="">
               <p className="text-lg text-primaryColor border-b-2 w-1/6 border-primaryColor mb-5 text-nowrap">
                 ABOUT ME
               </p>
-              <h2 className="text-4xl font-semibold leading-relaxed">
+              <h2 className="text-2xl md:text-4xl font-semibold md:leading-relaxed">
                 Designing Success One <br />
                 Project at a Time
               </h2>
-              <p className="text-sm text-gray-400 mt-4">
+              <p className="text-sm text-gray-400 mt-2 md:mt-4">
                 Financial planners help to gain knowledge aboutw toio invest and
                 save their
                 <br /> money in the most efficient way ever. many people all of
               </p>
               <div className="flex gap-x-16 mt-5">
-                <div>
+                <div className="space-y-2">
                   <p className="text-lg flex items-center">
                     <MdKeyboardDoubleArrowRight className="mr-2 text-3xl text-primaryColor" />{" "}
                     Web Design
@@ -156,7 +160,7 @@ const Home = () => {
                     Product Design
                   </p>
                 </div>
-                <div>
+                <div className="space-y-2">
                   <p className="text-lg flex items-center">
                     <MdKeyboardDoubleArrowRight className="mr-2 text-3xl text-primaryColor" />{" "}
                     UI/Ux Design
@@ -167,7 +171,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="mt-6 flex gap-x-14">
+              <div className="mt-6 flex flex-col md:flex-row space-y-2 gap-x-14">
                 <button className="text-lg py-2 px-4 border border-primaryColor rounded-xl">
                   Hire Me +
                 </button>
@@ -191,16 +195,11 @@ const Home = () => {
               />
             </div>
           </div>
-          <img
-            className="absolute top-[440px] -right-[160px] w-[280px]"
-            src={Element3}
-            alt="element"
-          />
         </section>
 
-        {/* Education And skill section */}
+        {/* Education And Experience section */}
         <section className="w-3/4 mx-auto mt-[80px]">
-          <div className="font-primaryFont text-center">
+          <div className="font-primaryFont text-center relative">
             <div className="flex justify-center items-center gap-x-2">
               <TfiLayoutLineSolid className="text-4xl text-primaryColor" />
               <p className="text-lg text-primaryColor">
@@ -213,6 +212,11 @@ const Home = () => {
               <br />
               Project at a Time
             </h2>
+            <img
+              className="absolute top-0 -right-10 w-[280px]"
+              src={Element3}
+              alt="element"
+            />
           </div>
           <div className="font-primaryFont flex gap-x-24 mt-14">
             {/* Education */}
@@ -313,7 +317,7 @@ const Home = () => {
                 save their money in the most efficient way ever.
               </p>
               <img
-                className="absolute top-0 right-0 w-[280px] h-auto"
+                className="absolute -top-12 -right-20 w-[480px] h-auto"
                 src={SkillElement}
                 alt=""
               />
@@ -347,14 +351,107 @@ const Home = () => {
         <section className="w-3/4 mx-auto mt-[80px] font-primaryFont">
           <div className="flex items-end justify-between">
             <div>
-              <p className="text-lg text-primaryColor border-b-2 border-primaryColor w-[130px] text-nowrap">MY PORTFOLIO</p>
-              <h2 className="text-4xl font-semibold leading-relaxed">Resonating Professionalism
+              <p className="text-lg text-primaryColor border-b-2 border-primaryColor w-[130px] text-nowrap">
+                MY PORTFOLIO
+              </p>
+              <h2 className="text-4xl font-semibold leading-relaxed">
+                Resonating Professionalism
                 <br />
                 and Accomplishment
               </h2>
             </div>
             <div>
-              <button className="border-2 border-primaryColor text-base py-2 px-4 rounded-lg hover:bg-primaryColor hover:transition-all hover:duration-1000 hover:text-gray-800">View more...</button>
+              <button className="border-2 border-primaryColor text-base py-2 px-4 rounded-lg hover:bg-primaryColor hover:transition-all hover:duration-1000 hover:text-gray-800">
+                View more...
+              </button>
+            </div>
+          </div>
+          {/* cart container */}
+          <div className="mt-12">
+            {/* cart number 1 */}
+            <div className="flex items-start group hover:cursor-pointer">
+              <div className="bg-[#191919cc] py-6 px-6 border-l border-primaryColor rounded-l-xl">
+                <p className="text-base text-primaryColor mb-3">Web Design</p>
+                <h3 className="text-2xl font-semibold mb-2">
+                  Looking to Create a <br />
+                  E-Commerce Web Page
+                </h3>
+                <p className="text-base text-gray-300 mb-4">
+                  Financial planners help to gain knowledge <br />
+                  aboutw toio invest
+                </p>
+                <button>Larne more...</button>
+              </div>
+              <img
+                className="w-[420px] h-[243px] rounded-r-xl transition-transform duration-300 group-hover:h-[320px] group-hover:rounded-bl-xl"
+                src={CartImg1}
+                alt=""
+              />
+            </div>
+            {/* cart number 2 */}
+            <div className="flex justify-end group hover:cursor-pointer">
+              <div className="flex items-start mt-12">
+                <div className="bg-[#191919cc] py-6 px-6 border-l border-primaryColor rounded-l-xl">
+                  <p className="text-base text-primaryColor mb-3">Web Design</p>
+                  <h3 className="text-2xl font-semibold mb-2">
+                    Looking to Create a <br />
+                    E-Commerce Web Page
+                  </h3>
+                  <p className="text-base text-gray-300 mb-4">
+                    Financial planners help to gain knowledge <br />
+                    aboutw toio invest
+                  </p>
+                  <button>Larne more...</button>
+                </div>
+                <img
+                  className="w-[420px] h-[243px] rounded-r-xl transition-transform duration-300 group-hover:h-[320px] group-hover:rounded-bl-xl"
+                  src={CartImg2}
+                  alt=""
+                />
+              </div>
+            </div>
+            {/* cart number 3 */}
+            <div className="flex items-start mt-12 group hover:cursor-pointer">
+              <div className="bg-[#191919cc] py-6 px-6 border-l border-primaryColor rounded-l-xl">
+                <p className="text-base text-primaryColor mb-3">Web Design</p>
+                <h3 className="text-2xl font-semibold mb-2">
+                  Looking to Create a <br />
+                  E-Commerce Web Page
+                </h3>
+                <p className="text-base text-gray-300 mb-4">
+                  Financial planners help to gain knowledge <br />
+                  aboutw toio invest
+                </p>
+                <button>Larne more...</button>
+              </div>
+              <img
+                className="w-[420px] h-[243px] rounded-r-xl transition-transform duration-300 group-hover:h-[320px] group-hover:rounded-bl-xl"
+                src={CartImg3}
+                alt=""
+              />
+            </div>
+            {/* cart number 4 */}
+            <div className="flex justify-end group hover:cursor-pointer">
+              {/* Added group class */}
+              <div className="flex items-start mt-12">
+                <div className="bg-[#191919cc] py-6 px-6 border-l border-primaryColor rounded-l-xl">
+                  <p className="text-base text-primaryColor mb-3">Web Design</p>
+                  <h3 className="text-2xl font-semibold mb-2">
+                    Looking to Create a <br />
+                    Real Estate Web Page
+                  </h3>
+                  <p className="text-base text-gray-300 mb-4">
+                    Financial planners help to gain knowledge <br />
+                    aboutw toio invest
+                  </p>
+                  <button>Learn more...</button>
+                </div>
+                <img
+                  className="w-[420px] h-[243px] rounded-r-xl transition-transform duration-300 group-hover:h-[320px] group-hover:rounded-bl-xl"
+                  src={CartImg4}
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </section>
